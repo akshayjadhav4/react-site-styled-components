@@ -10,7 +10,7 @@
 
 # production
 /build
-
+/src/assests/video.mp4
 # misc
 .DS_Store
 .env.local
