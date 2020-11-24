@@ -21,7 +21,12 @@ import {
   FaTwitter,
   FaLinkedin,
 } from "react-icons/fa";
+import { animateScroll as scroll } from "react-scroll";
+
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
     <FooterContainer>
       <FooterWrap>
@@ -65,7 +70,9 @@ const Footer = () => {
         </FooterLinkContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">AKS</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              AKS
+            </SocialLogo>
             <WebsiteRights>
               AKS &copy; {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
